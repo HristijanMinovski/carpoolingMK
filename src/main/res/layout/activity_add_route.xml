@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DADDD4">
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Почетно време на возењето"/>
+    <EditText
+        android:id="@+id/startLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Внесете почетна локација" />
+
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Внесете дестинација" />
+    <EditText
+        android:id="@+id/pricePerPersonEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Внесетe цена" />
+
+    <Button
+        android:id="@+id/showOnMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прикажи на мапа" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".AddRoute"/>
+    <Button
+        android:id="@+id/AddRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Внеси рута"/>
+</LinearLayout>

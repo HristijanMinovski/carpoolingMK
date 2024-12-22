@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    app:title="CarPoolMK"
+    app:titleTextAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+    app:titleTextColor="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="#138E84">
+</androidx.appcompat.widget.Toolbar>

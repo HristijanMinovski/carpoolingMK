@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#DADDD4">
+<include layout="@layout/appbar"
+    android:id="@+id/appbar_driver"/>
+    <!-- Vehicle Year TextView -->
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Корисничко име: "
+        android:textSize="22sp"
+        android:paddingTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/appbar_driver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Vehicle Name TextView -->
+    <TextView
+        android:id="@+id/vehicleNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Возило: "
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vehicleYearTextView"/>
+
+    <!-- Vehicle Year TextView -->
+    <TextView
+        android:id="@+id/vehicleYearTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Година на возилотот"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/vehicleNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/driverRatingTextView"/>
+
+
+    <!-- Driver Rating TextView -->
+    <TextView
+        android:id="@+id/driverRatingTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Рејтинг: "
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/vehicleYearTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/route_button"/>
+    <Button
+        android:id="@+id/rate_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:focusable="true"
+        android:text="Oцени претходен патник"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        android:clickable="true"
+        android:textSize="22dp"
+        android:layout_margin="20dp"/>
+
+
+    <Button
+        android:id="@+id/route_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:focusable="true"
+        android:text="Додадете возење"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        android:clickable="true"
+        android:textSize="22dp"
+        android:layout_margin="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

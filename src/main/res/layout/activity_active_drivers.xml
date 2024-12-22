@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DADDD4">
+    <include
+        layout="@layout/appbar_client"
+        android:id="@+id/appbar_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!-- RecyclerView for Requests, initially set to 'gone' -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/baranja"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingTop="30dp"
+        />
+</LinearLayout>

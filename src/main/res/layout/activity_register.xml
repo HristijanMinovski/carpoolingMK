@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#DADDD4">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="App Logo"
+        android:src="@drawable/img" />
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.example.workshop.reg"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_reg"
+        android:background="#DADDD4"
+        android:layout_width="match_parent" />
+</LinearLayout>
